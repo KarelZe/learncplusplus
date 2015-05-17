@@ -98,7 +98,7 @@ int main(){
 	sort(difference.begin(), difference.end());
 	
 	//round down--> risk will be overestimated, otherwise use ceil, then cast to int
-	step = floor(step*(difference.size()+1));
+	step = floor(step*difference.size());
 		
 	valueAtRisk=difference.at((int)step);
 	
